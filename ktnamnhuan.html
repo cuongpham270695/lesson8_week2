@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm nhuận</title>
+</head>
+<body>
+    <h4 style="color: blue" id="year"></h4>
+    <script type="text/javascript">
+        let year = parseInt(prompt("Enter a year:"));
+        if (year%4==0)
+        {
+            if (year%100==0)
+            {
+                if (year%400==0)
+                {
+                    alert(year + "is a leap year");
+                }
+                else
+                {
+                    alert(year + "is not a leap year")
+                }
+            }
+            else
+            {
+                alert(year + "is a leap year")
+            }
+        }
+        else {alert(year + "is not a leap year")}
+    </script>
+</body>
+</html>
